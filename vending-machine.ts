@@ -1,3 +1,4 @@
+import { ExactChange } from './vending-machine-interfaces'
 export default class VendingMachine {
 
     amount: number;
@@ -139,13 +140,4 @@ export default class VendingMachine {
     console.log(`Here\'s your change! $${change}`, exactChange);
     return exactChange;
   }
-}
-   
-interface ExactChange {
-    quarters: number;
-    nickles: number;
-    dimes: number;
-    one$: number;
-    ten$: number;
-    five$: number;
 }
